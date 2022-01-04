@@ -1,0 +1,1194 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+	  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Halaman Data Spam</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  </head>
+  <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">D&H</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="spam">DATA SPAM</a>
+      </li> 
+      	    <li class="nav-item">
+        <a class="nav-link" href="status">Status</a>
+      </li> 
+          </ul>
+    <div class="p-2">
+        <p class="form-inline my-2 my-lg-0 x-left">Hi, koko</p>
+    </div>
+    <div class="p-2">
+        <p class="form-inline my-2 my-lg-0 x-left"> <a class="nav-link" href="http://localhost/spam/index.php/auth/logout"> Logout</a></p>
+    </div>
+    <!-- <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form> -->
+  </div>
+  </nav>
+
+<div class="container-fluid">
+ <div class="row mt-3"> 
+  <div class="col md6"> 
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item active" aria-current="page">Data SPAM</li>
+		</ol>
+	</nav>
+	<script>
+    $(document).ready( function () {
+		$('#table_id').DataTable();
+	});
+	</script>
+	
+		<!-- Button trigger modal -->
+		<span data-toggle="modal" data-target="#ModalScrollableInsert">
+	<a href="#">Add Data<span class="glyphicon glyphicon-plus"></span></a>
+	</span>
+		<h1></h1>
+	<form method="post" action="http://localhost/spam/index.php/spam/delete_spam" id="form-delete-spam">
+	<table id="table_id" class="display">
+     <thead>
+      <tr>
+			<th scope="col"><input type="checkbox" id="check-all" ></th> 			<th scope="col">No.</th>
+      <th scope="col">Email</th>
+	  <th scope="col">Link Post</th>
+	  <th scope="col">Date POST</th>
+	  <th scope="col">Title</th>
+	  <th scope="col">Status</th>
+	  <th scope="col">Keterangan</th>
+	  
+
+						<th colspan="2">Action</th>
+			      </tr>
+     </thead>
+     <tbody>
+	   
+	   	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="105" ></th>
+						
+	    <td>1 </td>
+			<td>bisni89@gmail.com </td>
+			<td>https://youtu.be/p9N2bYiHBJ0 </td>
+			<td>2019-08-03 00:00:00</td>
+			<td></td>
+			<td></td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=105"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="104" ></th>
+						
+	    <td>2 </td>
+			<td>Breond89@gmail.com </td>
+			<td>https://medium.com/@breond89/fast-furious-presents-hobbs-shaw-full-movie-dwayne-johnson-jason-statham-f40d21a1c79b </td>
+			<td>2019-08-03 00:00:00</td>
+			<td>hobbs and shaw</td>
+			<td></td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=104"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="103" ></th>
+						
+	    <td>3 </td>
+			<td>Breond89@gmail.com </td>
+			<td>https://www.pinterest.com/breond89/fast-and-furious-hobbs-and-shaw-streaming-complet/ </td>
+			<td>2019-08-03 00:00:00</td>
+			<td>hobbs and shaw</td>
+			<td></td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=103"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="102" ></th>
+						
+	    <td>4 </td>
+			<td>Breond89@gmail.com </td>
+			<td>https://youtu.be/gPFs9o130qE </td>
+			<td>2019-08-03 00:00:00</td>
+			<td>hobbs and shaw</td>
+			<td></td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=102"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="101" ></th>
+						
+	    <td>5 </td>
+			<td>ontle898@gmail.com </td>
+			<td>https://stackoverflow.com/story/hobbsandshaw </td>
+			<td>2019-08-02 00:00:00</td>
+			<td>hobbs and shaw</td>
+			<td></td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=101"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="100" ></th>
+						
+	    <td>6 </td>
+			<td>ontle898@gmail.com </td>
+			<td>https://medium.com/@ontle898/this-fast-furious-spinoff-featuring-dwayne-johnson-and-jason-statham-veers-awfully-close-to-648899aba022 </td>
+			<td>2019-08-02 00:00:00</td>
+			<td>hobbs and shaw</td>
+			<td></td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=100"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="99" ></th>
+						
+	    <td>7 </td>
+			<td>ontle898 </td>
+			<td>https://youtu.be/IYOixTo63-Q </td>
+			<td>2019-08-02 00:00:00</td>
+			<td>fast anfurious movie</td>
+			<td></td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=99"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="98" ></th>
+						
+	    <td>8 </td>
+			<td>rembt89@gmail.com </td>
+			<td>https://www.youtube.com/watch?v=2bQvu3IpfQ0 </td>
+			<td>2019-08-01 00:00:00</td>
+			<td></td>
+			<td></td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=98"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="97" ></th>
+						
+	    <td>9 </td>
+			<td>rembt89@gmail.com </td>
+			<td>https://youtu.be/P6pnvWFkM84 </td>
+			<td>2019-08-01 00:00:00</td>
+			<td>NAYC 2019</td>
+			<td></td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=97"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="96" ></th>
+						
+	    <td>10 </td>
+			<td>amdan25@fastmail.com </td>
+			<td>https://youtu.be/T9wHPVuTq8s </td>
+			<td>2019-07-31 00:00:00</td>
+			<td>fastandfurious hobss and shaw</td>
+			<td></td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=96"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="94" ></th>
+						
+	    <td>11 </td>
+			<td>jsantosrussell@gmail.com </td>
+			<td>http://fastandfuriousmovie.over-blog.com </td>
+			<td>2019-07-31 00:00:00</td>
+			<td>fastandfurious hobss and shaw</td>
+			<td></td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=94"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="93" ></th>
+						
+	    <td>12 </td>
+			<td>anthonyrnguyen@gmail.com </td>
+			<td>https://medium.com/@anthonyrnguyen/ver-fast-furious-hobbs-shaw-streaming-hd-f4072ff0afaf </td>
+			<td>2019-07-29 00:00:00</td>
+			<td>fastandfurioushobbandshow</td>
+			<td></td>
+			<td>medium </td>
+						<td><p  ><a href="spam/editSpam?id=93"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="92" ></th>
+						
+	    <td>13 </td>
+			<td>anthonyrnguyen@gmail.com </td>
+			<td>https://stackoverflow.com/story/fastandfurious </td>
+			<td>2019-07-29 00:00:00</td>
+			<td>fastandfurioushobbandshow</td>
+			<td></td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=92"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="91" ></th>
+						
+	    <td>14 </td>
+			<td>mhenklew@gmail.com </td>
+			<td>https://medium.com/@mhenklew/honeyland-2019-full-movie-streaming-5eaa0b8cdf3e </td>
+			<td>2019-07-24 00:00:00</td>
+			<td>Honyland</td>
+			<td></td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=91"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="90" ></th>
+						
+	    <td>15 </td>
+			<td>mhenklew@gmail.com </td>
+			<td>https://medium.com/@mhenklew/once-upon-a-time-in-hollywood-movie-2019-streaming-eef925e6d58b </td>
+			<td>2019-07-24 00:00:00</td>
+			<td>once upon a time in hollywood</td>
+			<td></td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=90"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="89" ></th>
+						
+	    <td>16 </td>
+			<td>btrotmanm@gmail.com </td>
+			<td>http://sport-live.over-blog.com/2019/real-madrid-vs-arsenal-live-streaming.html </td>
+			<td>2019-07-23 00:00:00</td>
+			<td>Arsenal vs Real madrid</td>
+			<td>belum ada link</td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=89"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="88" ></th>
+						
+	    <td>17 </td>
+			<td>btrotmanm@gmail.com </td>
+			<td>https://medium.com/@btrotmanm/fast-furious-hobbs-shaw-film-complet-2019-en-francais-11129cb98302 </td>
+			<td>2019-07-23 00:00:00</td>
+			<td>Fast & Furious </td>
+			<td>sudah ada link</td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=88"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="87" ></th>
+						
+	    <td>18 </td>
+			<td>btrotmanm@gmail.com </td>
+			<td>https://medium.com/@btrotmanm/wedding-nightmare-film-complete-2019-streaming-7606e0dceecc </td>
+			<td>2019-07-23 00:00:00</td>
+			<td>Wedding Nightmare</td>
+			<td>sudah ada link</td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=87"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="86" ></th>
+						
+	    <td>19 </td>
+			<td>btrotmanm@gmail.com </td>
+			<td>http://thelionking-stream.over-blog.com/2019/le-roi-lion-streaming-film-complet-vf.html </td>
+			<td>2019-07-22 00:00:00</td>
+			<td>The Lion King</td>
+			<td>sudah ada link</td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=86"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="85" ></th>
+						
+	    <td>20 </td>
+			<td>btrotmanm@gmail.com </td>
+			<td>http://thelionking-stream.over-blog.com/2019/le-roi-lion-streaming-complete.html </td>
+			<td>2019-07-22 00:00:00</td>
+			<td>The Lion King</td>
+			<td>sudah ada link</td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=85"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="84" ></th>
+						
+	    <td>21 </td>
+			<td>btrotmanm@gmail.com </td>
+			<td>http://thelionking-stream.over-blog.com/2019/the-lion-king-movie-streaming-online.html </td>
+			<td>2019-07-22 00:00:00</td>
+			<td>The Lion King</td>
+			<td>sudah ada link</td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=84"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="83" ></th>
+						
+	    <td>22 </td>
+			<td>nomde89@gmail.com </td>
+			<td>https://streamvoir.me </td>
+			<td>2019-07-20 00:00:00</td>
+			<td></td>
+			<td>sudah ada link</td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=83"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="82" ></th>
+						
+	    <td>23 </td>
+			<td>nomde89@gmail.com </td>
+			<td>https://app.getpocket.com/read/2664879147 </td>
+			<td>2019-07-20 00:00:00</td>
+			<td>The Lion King</td>
+			<td></td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=82"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="81" ></th>
+						
+	    <td>24 </td>
+			<td>nomde89@gmail.com </td>
+			<td>https://www.scoop.it/topic/nomde </td>
+			<td>2019-07-20 00:00:00</td>
+			<td>The Lion King</td>
+			<td></td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=81"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="80" ></th>
+						
+	    <td>25 </td>
+			<td>eliceckim94@gmail.com </td>
+			<td>https://medium.com/@aliceckim94/regarder-fast-furious-presents-hobbs-shaw-streaming-68ae72776ad4 </td>
+			<td>2019-07-20 00:00:00</td>
+			<td>fast & furious</td>
+			<td></td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=80"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="79" ></th>
+						
+	    <td>26 </td>
+			<td>aliceckim94@gmail.com </td>
+			<td>http://fast-furious-hobbs-shaw-stream.over-blog.com/2019/07/regarder-fast-furious-presents-hobbs-shaw-streaming.html </td>
+			<td>2019-07-20 00:00:00</td>
+			<td>fast & furious hobbs & show</td>
+			<td>sudah ada link</td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=79"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="78" ></th>
+						
+	    <td>27 </td>
+			<td>wfloydm@gmail.cm </td>
+			<td>http://euphoria-season1-netflix.over-blog.com/2019/07/euphoria-season-1-episode-6-streaming-complet-s1e6.html </td>
+			<td>2019-07-20 00:00:00</td>
+			<td>Euphoria </td>
+			<td>sudah ada link</td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=78"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="77" ></th>
+						
+	    <td>28 </td>
+			<td>wfloydm@gmail.cm </td>
+			<td>https://medium.com/@wfloydm/euphoria-season-1-episode-6-full-streaming-f433cf9e5ec7 </td>
+			<td>2019-07-20 00:00:00</td>
+			<td>Euphoria </td>
+			<td>sudah ada link</td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=77"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="76" ></th>
+						
+	    <td>29 </td>
+			<td>anthonyrnguyen@gmail.com </td>
+			<td>http://le-roi-lion-complet-fr.over-blog.com/2019/07/le-roi-lion-film-complet-en-francais.html </td>
+			<td>2019-07-19 00:00:00</td>
+			<td>The Lion King</td>
+			<td>sudah ada link</td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=76"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="75" ></th>
+						
+	    <td>30 </td>
+			<td>anthonyrnguyen@gmail.com </td>
+			<td>https://medium.com/@anthonyrnguyen/le-roi-lion-film-complet-en-francais-92c40f301cad </td>
+			<td>2019-07-19 00:00:00</td>
+			<td>The Lion King</td>
+			<td>sudah ada link</td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=75"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="74" ></th>
+						
+	    <td>31 </td>
+			<td>anthonyrnguyen@gmail.com </td>
+			<td>https://medium.com/@anthonyrnguyen/euphoria-season-1-episode-6-streaming-49234959cd13 </td>
+			<td>2019-07-19 00:00:00</td>
+			<td>Euphoria </td>
+			<td>sudah ada link</td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=74"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="71" ></th>
+						
+	    <td>32 </td>
+			<td>evajbonnell@gmail.com:Iushae1r </td>
+			<td>https://sites.google.com/view/spiderman-far-from-home-2019- </td>
+			<td>2019-07-12 00:00:00</td>
+			<td>Spiderman</td>
+			<td></td>
+			<td>https://tinyurl.com/y2pvhhm7 </td>
+						<td><p  ><a href="spam/editSpam?id=71"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="69" ></th>
+						
+	    <td>33 </td>
+			<td>sharonjminnis@gmail.com </td>
+			<td>https://medium.com/@sharonjminnis/watch-spider-man-far-from-home-streaming-1080-hd-1548142d4339 </td>
+			<td>2019-07-11 00:00:00</td>
+			<td>spiderman</td>
+			<td></td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=69"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="68" ></th>
+						
+	    <td>34 </td>
+			<td>sharonjminnis@gmail.com </td>
+			<td>https://medium.com/@sharonjminnis/crawl-film-2019-streaming-vf-1080-hd-556848b91632 </td>
+			<td>2019-07-11 00:00:00</td>
+			<td>crawl</td>
+			<td></td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=68"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="67" ></th>
+						
+	    <td>35 </td>
+			<td>sharonjminnis@gmail.com </td>
+			<td>https://medium.com/@sharonjminnis/watch-shooter-the-movie-streaming-a4db111353e </td>
+			<td>2019-07-11 00:00:00</td>
+			<td>Shooter</td>
+			<td></td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=67"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="66" ></th>
+						
+	    <td>36 </td>
+			<td>djudkinsp@gmail.com </td>
+			<td>http://tv-shows-stream.over-blog.com </td>
+			<td>2019-07-10 00:00:00</td>
+			<td></td>
+			<td></td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=66"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="65" ></th>
+						
+	    <td>37 </td>
+			<td>sharonjminnis@gmail.com </td>
+			<td>https://medium.com/@sharonjminnis/scary-movie-completa-en-espa%C3%B1ol-latino-962222342b12 </td>
+			<td>2019-07-09 00:00:00</td>
+			<td>scary movie</td>
+			<td></td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=65"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="64" ></th>
+						
+	    <td>38 </td>
+			<td>sharonjminnis@gmail.com </td>
+			<td>http://philadelphia-netflx-film-stream.over-blog.com </td>
+			<td>2019-07-09 00:00:00</td>
+			<td>Philadelphia</td>
+			<td></td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=64"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="63" ></th>
+						
+	    <td>39 </td>
+			<td>sharonjminnis@gmail.com </td>
+			<td>https://medium.com/@sharonjminnis/philadelphia-film-complet-vf-64d615a93052 </td>
+			<td>2019-07-09 00:00:00</td>
+			<td>Philadelphia</td>
+			<td>belum ada link</td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=63"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="62" ></th>
+						
+	    <td>40 </td>
+			<td>sharonjminnis@gmail.com </td>
+			<td>https://medium.com/@sharonjminnis/philadelphia-pelicula-completa-en-espa%C3%B1ol-d7f4adef1700 </td>
+			<td>2019-07-09 00:00:00</td>
+			<td>Philadelphia</td>
+			<td></td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=62"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="61" ></th>
+						
+	    <td>41 </td>
+			<td>nomde89@gmail.com </td>
+			<td>https://www.minds.com/nomde/blog/https-www-ovflix-org-movie-429617-spider-man-far-from-home-h-994138364532113408 </td>
+			<td>2019-07-06 00:00:00</td>
+			<td>spiderman</td>
+			<td></td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=61"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="60" ></th>
+						
+	    <td>42 </td>
+			<td>nomde89@gmail.com </td>
+			<td>https://nomde.pb.online/ </td>
+			<td>2019-07-06 00:00:00</td>
+			<td></td>
+			<td></td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=60"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="59" ></th>
+						
+	    <td>43 </td>
+			<td>nomde89@gmail.com </td>
+			<td>https://www.evernote.com/shard/s536/sh/18738480-732b-49cf-876a-09c0c71f2558/17528e29db5665bcf071916b1195c226 </td>
+			<td>2019-07-06 00:00:00</td>
+			<td></td>
+			<td></td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=59"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="58" ></th>
+						
+	    <td>44 </td>
+			<td>nomde89@gmail.com </td>
+			<td>https://www.evernote.com/shard/s536/sh/27829a99-1307-444a-8e43-7361d89fc884/c121a21a7919fc07e55da784940ed03f </td>
+			<td>2019-07-06 00:00:00</td>
+			<td></td>
+			<td></td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=58"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="57" ></th>
+						
+	    <td>45 </td>
+			<td>nomde89@gmail.com </td>
+			<td>https://www.evernote.com/shard/s536/sh/a0721a2e-b54d-4296-a787-8b4a7e8bcb93/d04900e44a840e02803a645a7fd8eea9 </td>
+			<td>2019-07-06 00:00:00</td>
+			<td></td>
+			<td></td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=57"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="56" ></th>
+						
+	    <td>46 </td>
+			<td>nomde89@gmail.com </td>
+			<td>https://list.ly/list/3Bgm-spider-man-far-from-home-full-movie-hd </td>
+			<td>2019-07-06 00:00:00</td>
+			<td></td>
+			<td></td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=56"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="55" ></th>
+						
+	    <td>47 </td>
+			<td>nomde89@gmail.com </td>
+			<td>https://penzu.com/public/e602ba17 </td>
+			<td>2019-07-06 00:00:00</td>
+			<td>spiderman</td>
+			<td></td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=55"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="54" ></th>
+						
+	    <td>48 </td>
+			<td>ropf8889@gmail.com </td>
+			<td>http://tvhdshows.over-blog.com </td>
+			<td>2019-07-06 00:00:00</td>
+			<td>stranger string</td>
+			<td>belum ada link</td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=54"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="53" ></th>
+						
+	    <td>49 </td>
+			<td>nomde89@gmail.com </td>
+			<td>https://www.openlearning.com/u/nomde/blog/StrangerThingsSeason3AllEpisodeStreamingVf </td>
+			<td>2019-07-06 00:00:00</td>
+			<td>stranger string</td>
+			<td></td>
+			<td>tvshows </td>
+						<td><p  ><a href="spam/editSpam?id=53"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="52" ></th>
+						
+	    <td>50 </td>
+			<td>nomde89@gmail.com </td>
+			<td>https://www.openlearning.com/u/nomde/blog/SpidermanVerVanHuisVolledigeFilm2019/ </td>
+			<td>2019-07-06 00:00:00</td>
+			<td>spiderman</td>
+			<td></td>
+			<td>belum injek </td>
+						<td><p  ><a href="spam/editSpam?id=52"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="51" ></th>
+						
+	    <td>51 </td>
+			<td>nomde89@gmail.com </td>
+			<td>https://www.openlearning.com/u/nomde/blog/SpidermanLoinDeChezMoiFilmCompletSpidermanFarFromHome/ </td>
+			<td>2019-07-06 00:00:00</td>
+			<td>spiderman</td>
+			<td></td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=51"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="49" ></th>
+						
+	    <td>52 </td>
+			<td>dorothytjensen@gmail.com </td>
+			<td>https://medium.com/@tomholland1/spiderman-loin-de-chez-moi-film-complet-streaming-d9310fecc016 </td>
+			<td>2019-07-06 00:00:00</td>
+			<td></td>
+			<td></td>
+			<td>belum di isi link </td>
+						<td><p  ><a href="spam/editSpam?id=49"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="48" ></th>
+						
+	    <td>53 </td>
+			<td>dorothytjensen@gmail.com </td>
+			<td>http://spiderman-loin-de-chez-moi.over-blog.com/2019/07/spiderman-loin-de-chez-moi-film-complet-hd.html </td>
+			<td>2019-07-05 00:00:00</td>
+			<td></td>
+			<td></td>
+			<td>sudah ada link </td>
+						<td><p  ><a href="spam/editSpam?id=48"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="47" ></th>
+						
+	    <td>54 </td>
+			<td>nomde89@gmail.com </td>
+			<td>http://event-streaming-spiderman.over-blog.com/2019/07/spiderman-loin-de-chez-moi-film-complet.html </td>
+			<td>2019-07-05 00:00:00</td>
+			<td></td>
+			<td></td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=47"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="46" ></th>
+						
+	    <td>55 </td>
+			<td>nomde89@gmail.com </td>
+			<td>http://event-streaming-spiderman.over-blog.com/2019/07/spiderman-ver-van-huis-volledige-film.html </td>
+			<td>2019-07-05 00:00:00</td>
+			<td>Spiderman</td>
+			<td></td>
+			<td>sudah ada link </td>
+						<td><p  ><a href="spam/editSpam?id=46"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="45" ></th>
+						
+	    <td>56 </td>
+			<td>nomde89@gmail.com </td>
+			<td>https://medium.com/@nomde89/spiderman-loin-de-chez-moi-film-complet-en-francais-d4203ac1214f </td>
+			<td>2019-07-05 00:00:00</td>
+			<td></td>
+			<td></td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=45"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="44" ></th>
+						
+	    <td>57 </td>
+			<td>nomde89@gmail.com </td>
+			<td>https://medium.com/@nomde89/spiderman-ver-van-huis-volledige-film-e97099c2ecc6 </td>
+			<td>2019-07-05 00:00:00</td>
+			<td>Spiderman</td>
+			<td></td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=44"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="43" ></th>
+						
+	    <td>58 </td>
+			<td>crystalalangley@gmail.com </td>
+			<td>http://valkyrie-pelicula.over-blog.com/ </td>
+			<td>2019-07-04 00:00:00</td>
+			<td></td>
+			<td></td>
+			<td>belum di isi link </td>
+						<td><p  ><a href="spam/editSpam?id=43"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="42" ></th>
+						
+	    <td>59 </td>
+			<td>crystalalangley@gmail.com </td>
+			<td>https://medium.com/@crystalalangley/euphoria-season-1-episode-2-stuntin-like-my-daddy-f81b6b41a09f </td>
+			<td>2019-07-04 00:00:00</td>
+			<td></td>
+			<td></td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=42"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="41" ></th>
+						
+	    <td>60 </td>
+			<td>crystalalangley@gmail.com </td>
+			<td>https://medium.com/@crystalalangley/hd-euphoria-season-1-episode-1-pilot-free-online-streaming-d6934505b8b1 </td>
+			<td>2019-07-04 00:00:00</td>
+			<td></td>
+			<td></td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=41"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="40" ></th>
+						
+	    <td>61 </td>
+			<td>djudkinsp@gmail.com </td>
+			<td>http://annabelle-comes-home-2019.over-blog.com </td>
+			<td>2019-07-04 00:00:00</td>
+			<td></td>
+			<td></td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=40"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="39" ></th>
+						
+	    <td>62 </td>
+			<td>nomde89@gmail.com </td>
+			<td>https://www.freewebsubmission.com </td>
+			<td>2019-07-04 00:00:00</td>
+			<td></td>
+			<td></td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=39"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="38" ></th>
+						
+	    <td>63 </td>
+			<td>nomde89@gmail.com </td>
+			<td>https://www.pinterest.com/nomdeflix/spiderman-pelicula-completa/ </td>
+			<td>2019-07-04 00:00:00</td>
+			<td>Spiderman</td>
+			<td></td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=38"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="37" ></th>
+						
+	    <td>64 </td>
+			<td>eobz8988@gmail.com </td>
+			<td>https://www.pinterest.com/juliaepoi/ </td>
+			<td>2019-07-03 00:00:00</td>
+			<td></td>
+			<td></td>
+			<td>password:pri@tampan </td>
+						<td><p  ><a href="spam/editSpam?id=37"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="36" ></th>
+						
+	    <td>65 </td>
+			<td>pinterest </td>
+			<td>https://www.pinterest.com/martianole/spiderman-far-from-home-pelicula-completa </td>
+			<td>2019-07-02 00:00:00</td>
+			<td></td>
+			<td></td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=36"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="34" ></th>
+						
+	    <td>66 </td>
+			<td>maniso12@outlook.com </td>
+			<td>http://spiderman-ovflix.over-blog.com/2019/07/spider-man-lejos-de-casa-pelicula-completa-en-espanol-latino.html </td>
+			<td>2019-07-02 00:00:00</td>
+			<td>spiderman far from home</td>
+			<td></td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=34"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="32" ></th>
+						
+	    <td>67 </td>
+			<td>nomde89@gmail.com </td>
+			<td>https://tomholland.bandcamp.com/album/spider-man-lejos-de-casa-pelicula-completa </td>
+			<td>2019-07-02 00:00:00</td>
+			<td>spiderman far from home</td>
+			<td></td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=32"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="31" ></th>
+						
+	    <td>68 </td>
+			<td>nomde89@gmail.com:pr1@tampan </td>
+			<td>https://chirpstory.com/li/435096 </td>
+			<td>2019-07-02 00:00:00</td>
+			<td></td>
+			<td></td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=31"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="30" ></th>
+						
+	    <td>69 </td>
+			<td>Nomde10:pr1@tampan </td>
+			<td>https://chirpstory.com/li/434997 </td>
+			<td>2019-07-01 00:00:00</td>
+			<td>spiderman far from home</td>
+			<td></td>
+			<td>Twitter </td>
+						<td><p  ><a href="spam/editSpam?id=30"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="29" ></th>
+						
+	    <td>70 </td>
+			<td>ropf8889@gmail.com:pr1@tampan </td>
+			<td>https://www.pinterest.com/martianole </td>
+			<td>2019-07-01 00:00:00</td>
+			<td></td>
+			<td></td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=29"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="25" ></th>
+						
+	    <td>71 </td>
+			<td>nomde89@gmail.com:pr1@tampan </td>
+			<td>https://www.bitchute.com/playlist/tOR1j5T1ZwNX/ </td>
+			<td>2019-07-01 00:00:00</td>
+			<td>spiderman far from home</td>
+			<td></td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=25"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="24" ></th>
+						
+	    <td>72 </td>
+			<td>nomde89@gmail.com </td>
+			<td>https://medium.com/@nomde89/descargar-spiderman-lejos-de-casa-pelicula-completa-en-espa%C3%B1ol-latino-mega-961fe910c72f </td>
+			<td>2019-07-01 00:00:00</td>
+			<td></td>
+			<td>index</td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=24"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="23" ></th>
+						
+	    <td>73 </td>
+			<td>rizalif166@gmil.com </td>
+			<td>https://www.youtube.com/watch?v=kLafDd9k79Y&t=38s </td>
+			<td>2019-07-01 00:00:00</td>
+			<td>spiderman far from home</td>
+			<td>masih bertahan</td>
+			<td> </td>
+						<td><p  ><a href="spam/editSpam?id=23"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="21" ></th>
+						
+	    <td>74 </td>
+			<td>nomde89@gmail.com </td>
+			<td>https://medium.com/@nomde89/spiderman-lejos-de-casa-pelicula-completa-en-espa%C3%B1ol-latino-ecbfe1b098f0 </td>
+			<td>2019-07-01 00:00:00</td>
+			<td>spiderman far from home</td>
+			<td></td>
+			<td>medium </td>
+						<td><p  ><a href="spam/editSpam?id=21"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="13" ></th>
+						
+	    <td>75 </td>
+			<td>nomde89@gmail.com </td>
+			<td>http://cinemaxflix.blogolink.com </td>
+			<td>2019-06-30 00:00:00</td>
+			<td>spiderman far from home</td>
+			<td>index</td>
+			<td>blog lemoot </td>
+						<td><p  ><a href="spam/editSpam?id=13"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="12" ></th>
+						
+	    <td>76 </td>
+			<td>nomde89@gmail.com </td>
+			<td>https://www.slideserve.com/gaule02/spider-man-far-from-home-full-movie-hd-powerpoint-ppt-presentation </td>
+			<td>2019-06-30 00:00:00</td>
+			<td>spiderman far from home</td>
+			<td></td>
+			<td>password:pri@tampan </td>
+						<td><p  ><a href="spam/editSpam?id=12"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="11" ></th>
+						
+	    <td>77 </td>
+			<td>nomde89@gmail.com </td>
+			<td>https://www.slideserve.com/gaule02/annabelle-comes-home-full-movie-hd-powerpoint-ppt-presentation </td>
+			<td>2019-06-30 00:00:00</td>
+			<td>annabelle comes home</td>
+			<td></td>
+			<td>password:pri@tampan </td>
+						<td><p  ><a href="spam/editSpam?id=11"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="10" ></th>
+						
+	    <td>78 </td>
+			<td>nomde89@gmail.com </td>
+			<td>https://spidermanfarfromhome.page.tl </td>
+			<td>2019-06-30 00:00:00</td>
+			<td>spiderman far from home</td>
+			<td></td>
+			<td>blog page.tl  password:pr1@tampan </td>
+						<td><p  ><a href="spam/editSpam?id=10"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="9" ></th>
+						
+	    <td>79 </td>
+			<td>nomde89@gmail.com </td>
+			<td>https://chirpstory.com/li/434793 </td>
+			<td>2019-06-30 00:00:00</td>
+			<td>spiderman far from home</td>
+			<td></td>
+			<td>Akum twitter @nomde10 </td>
+						<td><p  ><a href="spam/editSpam?id=9"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="8" ></th>
+						
+	    <td>80 </td>
+			<td>nomde89@gmail.com  </td>
+			<td>https://chirpstory.com/li/434792 </td>
+			<td>2019-06-30 00:00:00</td>
+			<td>annabelle comes home</td>
+			<td></td>
+			<td>Pakai akun twitter @Nomde10 </td>
+						<td><p  ><a href="spam/editSpam?id=8"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="7" ></th>
+						
+	    <td>81 </td>
+			<td>nomde89@gmail.com </td>
+			<td>https://tomholland.bandcamp.com/album/annabelle-comes-home-full-movie-hd </td>
+			<td>2019-06-30 00:00:00</td>
+			<td>annabelle comes home</td>
+			<td></td>
+			<td>password:priatampan </td>
+						<td><p  ><a href="spam/editSpam?id=7"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	   <tr>
+		  			<th><input type="checkbox" class="check-item" name="idSpam[]" value="6" ></th>
+						
+	    <td>82 </td>
+			<td>nomde89@gmail.com </td>
+			<td>https://tomholland.bandcamp.com/album/spider-man-far-from-home-full-movie-hd </td>
+			<td>2019-06-30 00:00:00</td>
+			<td>spiderman far from home</td>
+			<td></td>
+			<td>password:priatampan </td>
+						<td><p  ><a href="spam/editSpam?id=6"><span class="glyphicon glyphicon-edit"></span>Edit</a></p></td>
+				   </tr>
+	  	 </tbody>
+	</table>
+	<p></p>
+		<button type="button" class="btn btn-secondary btn-sm" id="btn-delete">Multi Delete</button>
+		</form>
+  </div>
+ </div>
+ </div>
+
+
+<!-- Modal Insert-->
+<div class="modal fade" id="ModalScrollableInsert" tabindex="-1" role="dialog" aria-labelledby="ModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalScrollableTitle">Add Data SPAM</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+      </div>
+      <div class="modal-body">
+      <form id="form-insert" method="POST" action="http://localhost/spam/index.php/spam/insertSpam">
+			<div class="form-group row">
+				<label  class="col-sm-2 col-form-label"> Email </label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" placeholder="E-mail" name="account">
+			</div>
+			</div>
+			<div class="form-group row">
+				<label  class="col-sm-2 col-form-label">Link POST</label>
+			<div class="col-sm-10">
+			<input type="text" class="form-control" placeholder="post" name="link_post">
+			</div>
+			</div>
+			<div class="form-group row">
+				<label  class="col-sm-2 col-form-label">Title</label>
+			<div class="col-sm-10">
+			<input type="text" class="form-control" placeholder="Title" name="title">
+			</div>
+			</div>
+			<div class="form-group row">
+				<label  class="col-sm-2 col-form-label">Status</label>
+			<div class="col-sm-10">
+			<input type="text" class="form-control" placeholder="status" name="status">
+			</div>
+			</div>
+			<div class="form-group row">
+				<label  class="col-sm-2 col-form-label">Note</label>
+			<div class="col-sm-10">
+			<input type="text" class="form-control" placeholder="Keterangan" name="keterangan">
+			</div>
+			</div>
+			
+			
+			<div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary" id="btn-insert">Insert Data</button>
+      </div>
+			
+	  	</form>
+      </div>
+     
+    </div>
+  </div>
+</div>
+
+<!-- Modal Update-->
+<div class="modal fade" id="ModalScrollableUpdate" tabindex="-1" role="dialog" aria-labelledby="ModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalScrollableTitle">Update Data</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Multi DELETE -->
+ <script type="text/javascript">
+	$(document).ready(function(){
+		
+		$("#check-all").click(function(){
+        if($(this).is(":checked"))
+				 $(".check-item").prop("checked", true);
+			
+		    else
+				$(".check-item").prop("checked", false); 
+		
+			});
+	      $("#btn-delete").click(function(){ 
+		    			var confirm = window.confirm("Apakah Anda yakin ingin menghapus data-data Spam ini?"); 
+	  
+							if(confirm) 
+							$("#form-delete-spam").submit(); 
+      	  });
+		
+		
+  $('#ModalScrollableUpdate').on('show.bs.modal','.passingID', function (event) {
+  var ids = $(this).attr('data-id');
+
+	})
+
+
+	}); 
+
+
+ 
+	
+</script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  </body>
+</html>
